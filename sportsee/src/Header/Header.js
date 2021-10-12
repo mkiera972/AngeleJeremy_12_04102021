@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
+/**
+ * Cette classe affiche la barre de navigation du header avec le logo
+ */
 class Header extends React.Component {
     render(){
         return(

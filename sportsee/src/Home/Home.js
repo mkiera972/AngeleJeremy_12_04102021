@@ -1,17 +1,13 @@
 import React from 'react';
+import NavbarLeft from '../NavbarLeft/NavbarLeft';
 
 class Home extends React.Component {
     render(){
         return(
             <section className="content">
-                <nav className="navbar-left">
-                    <ul className="navbar-icons">
-                        <li>tata</li>
-                        <li>tata</li>
-                    </ul>
-                </nav>
-                <div className="content">
-
+                <NavbarLeft/>
+                <div className="content-right">
+                    toto
                 </div>
             </section>
         )
