@@ -5,8 +5,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Header from './Header/Header';
-import Home from './Home/Home';
+import Header from './components/Header/Header'
+import Home from './components/Home/Home';
 
 
 class App extends React.Component {

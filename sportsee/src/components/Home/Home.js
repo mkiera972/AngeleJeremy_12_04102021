@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarLeft from '../NavbarLeft/NavbarLeft';
+import NavbarLeft from '../../NavbarLeft/NavbarLeft';
 
 class Home extends React.Component {
     render(){
