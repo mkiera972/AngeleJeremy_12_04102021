@@ -51,5 +51,13 @@
         background-color: $color_white;
         color: $color_black;
         height: 100vh;
+        padding: 3rem 4rem;
+
+    }
+
+    &-subtitle{
+        font-size: 18px;
+        font-weight: 400;
     }
 }
+
