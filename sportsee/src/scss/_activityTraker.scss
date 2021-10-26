@@ -1,0 +1,40 @@
+.trackerActivity{
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    &-card{
+        padding: 3rem;
+        background-color: #FBFBFB;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        &-img{
+            padding: 1rem;
+            margin-right: 1rem;
+            border-radius: 5px;
+
+            img{
+                width: 25px;
+            }
+        }
+
+        &-infos{
+            &-activity{
+                font-weight: bold;
+                display: block;
+                font-size: 2rem;
+            }
+
+            &-activityTitle{
+                font-weight: 500;
+                display: block;
+                color: #74798C;
+;
+            }
+        }
+
+        .redligth{
+            background-color: #ff000030;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+/******************************
+* COMPOMNENT CHARTSVIEWS
+*******************************/
+.charts{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-wrap: wrap;
+
+    /******************************
+    * CHARTBAR
+    *******************************/
+    &-bar{
+        width: 100%;
+        height: 50%;
+        background-color: $background-color-chartbar;
+        padding-bottom: 60px;
+        margin-bottom: 30px;
+
+        &-header{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+
+        &-title{
+            width: 50%;
+        }
+
+        &-legend{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+
+            &-weight{
+                display: flex;
+                align-items: center;
+                &-color{
+                    background-color: $color_black;
+                    padding: .25rem;
+                    border-radius: 1rem;
+                    font-size: 5px;
+                    margin-right: 5px;
+                }
+            }
+
+            &-calories{
+                display: flex;
+                align-items: center;
+                &-color{
+                    background-color: $color_red;
+                    padding: .25rem;
+                    border-radius: 1rem;
+                    font-size: 5px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .tooltipLine {
+            color: #fff;
+            font-size: .8rem;
+            font-weight: 700;
+            margin: 0;
+            padding: 1rem;
+        }
+        
+        .tooltipLine.red {
+            background-color: #e60000;
+        }
+        
+    }
+
+    /******************************
+    * BLOC GRAPH
+    *******************************/
+    &-graph{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        /******************************
+        * CHARTLINE
+        *******************************/
+        &-sessions{
+            width: 32%;
+            height: 60%;
+            background-color: #e60000;
+            border-radius: .3125rem;
+
+            .graphscorestooltipLineChart {
+                background: #FBFBFB;
+                border-radius: .3125rem;
+                color: $color_black;
+                font-weight: bold;
+                font-size: .9rem;
+                font-weight: 500;
+                padding: .5rem;
+            }
+        }
+
+        /******************************
+        * CHARTRADAR
+        *******************************/
+        &-perf{
+            width: 32%;
+            background-color: $background-color-chartradar;
+            height: 60%;
+            border-radius: 5px;
+        }
+        
+        /******************************
+        * CHARTPIE
+        *******************************/
+        &-scores{
+            width: 32%;
+            height: 60%;
+            align-items: center;
+            background: #FBFBFB;
+            border-radius: .3125rem;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.0212249);
+            display: flex;
+            justify-content: center;
+            position: relative;
+    
+            
+            
+            &-infos {
+                font-size: 1rem;
+                position: absolute;
+                text-align: center;
+                background-color: $color-white;
+                padding: 2.5rem;
+                border-radius: 4em;
+            }
+            
+            &-value {
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            
+            &-title {
+                font-size: 1rem;
+                font-weight: 500;
+                left: 2rem;
+                margin: 0;
+                position: absolute;
+                top: 1.5rem;
+            }
+            
+        }
+    }
+}
