@@ -5,6 +5,11 @@
     display: flex;
     width: 60%;
     height: 100%;
+    @media (min-width: 1024px) and (max-width: 1400px) {
+        width: 68%;
+        height: 80%;
+    } 
+    
     flex-wrap: wrap;
 
     /******************************
@@ -13,6 +18,7 @@
     &-bar{
         width: 100%;
         height: 50%;
+
         background-color: $background-color-chartbar;
         padding-bottom: 60px;
         margin-bottom: 30px;
@@ -25,12 +31,18 @@
 
         &-title{
             width: 50%;
+            @media (min-width: 1024px) and (max-width: 1400px) {
+                font-size: 12px;
+            } 
         }
 
         &-legend{
             width: 50%;
             display: flex;
             justify-content: space-between;
+            @media (min-width: 1024px) and (max-width: 1400px) {
+                font-size: 12px;
+            } 
 
             &-weight{
                 display: flex;
@@ -87,6 +99,9 @@
         &-sessions{
             width: 32%;
             height: 60%;
+            @media (min-width: 1024px) and (max-width: 1400px) {
+                height: 80%;
+            }
             background-color: #e60000;
             border-radius: .3125rem;
 
@@ -108,6 +123,9 @@
             width: 32%;
             background-color: $background-color-chartradar;
             height: 60%;
+            @media (min-width: 1024px) and (max-width: 1400px) {
+                height: 80%;
+            }
             border-radius: 5px;
         }
         
@@ -117,6 +135,9 @@
         &-scores{
             width: 32%;
             height: 60%;
+            @media (min-width: 1024px) and (max-width: 1400px) {
+                height: 80%;
+            }
             align-items: center;
             background: #FBFBFB;
             border-radius: .3125rem;

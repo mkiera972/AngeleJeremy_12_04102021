@@ -1,15 +1,23 @@
 .trackerActivity{
     display: flex;
     flex-direction: column;
-    width: 37%;
+    width: 30%;
     &-card{
-        padding: 3rem;
+        padding: 3rem 5rem;
+        @media (min-width: 1024px) and (max-width: 1400px) {
+            padding: 1.5rem;
+        }
         background-color: #FBFBFB;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        margin-bottom: 20px;
+        border-radius: 10px;
         &-img{
             padding: 1rem;
+            @media (min-width: 1024px) and (max-width: 1400px) {
+                padding: .5rem;
+            }
             margin-right: 1rem;
             border-radius: 5px;
             /**/
@@ -24,18 +32,38 @@
                 font-weight: bold;
                 display: block;
                 font-size: 2rem;
+                @media (min-width: 1024px) and (max-width: 1400px) {
+                    font-size: 1rem;
+                } 
             }
 
             &-activityTitle{
                 font-weight: 500;
                 display: block;
                 color: #74798C;
+                font-size: 14px;
+                @media (min-width: 1024px) and (max-width: 1400px) {
+                    font-size: 12px;
+                } 
+                
 ;
             }
         }
 
         .redligth{
             background-color: #ff000030;
+        }
+
+        .blueligth{
+            background-color: #4AB8FF1A;
+        }
+
+        .yellowligth{
+            background-color: #f9ce233f;
+        }
+
+        .rosaligth{
+            background-color: #FD51811A;
         }
     }
 }

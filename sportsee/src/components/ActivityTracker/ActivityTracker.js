@@ -1,23 +1,21 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
+import CardActivity from "./CardActivity/CardActivity";
 
 // ASSETS 
-import calories from "../../assets/activityTracker/calories.png"
+import calories from "../../assets/activityTracker/calories.png";
+import protein from "../../assets/activityTracker/protein.png";
+import carbohydrates from "../../assets/activityTracker/carbohydrates.png";
+import lipids from "../../assets/activityTracker/lipids.png";
 
 class activityTracker extends Component {
     render() {
-        console.log(this.props)
         return (
             <div className="trackerActivity">
-                <div className="trackerActivity-card">
-                    <div className="trackerActivity-card-img redligth">
-                        <img src={calories} />
-                    </div>
-                    <div className="trackerActivity-card-infos">
-                        <span className="trackerActivity-card-infos-activity">{this.props.activityTrackerData.calorieCount}kCal</span>
-                        <span className="trackerActivity-card-infos-activityTitle">Calories</span>
-                    </div>
-                </div>
+                <CardActivity icon={calories} dataActivity={this.props.activityTrackerData.calorieCount + "kCal"} title="Calories" classCard="trackerActivity-card-img redligth"/>
+                <CardActivity icon={protein} dataActivity={this.props.activityTrackerData.proteinCount + "g"} title="Proteines" classCard="trackerActivity-card-img blueligth"/>
+                <CardActivity icon={carbohydrates} dataActivity={this.props.activityTrackerData.carbohydrateCount + "g"} title="Glucides" classCard="trackerActivity-card-img yellowligth"/>
+                <CardActivity icon={lipids} dataActivity={this.props.activityTrackerData.lipidCount + "g"} title="Lipides" classCard="trackerActivity-card-img rosaligth"/>
             </div>
         )
     }

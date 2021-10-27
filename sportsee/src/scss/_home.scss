@@ -52,8 +52,11 @@
         color: $color_black;
         height: 100vh;
         padding: 4rem 6rem;
+        @media (min-width: 1024px) and (max-width: 1400px) {
+            padding: 2rem 1rem;
+            height: 60vh;
+        } 
         display: flex;
-        align-items: center;
         justify-content: space-between;
     }
 }
