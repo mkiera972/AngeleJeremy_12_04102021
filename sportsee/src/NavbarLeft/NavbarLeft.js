@@ -1,6 +1,10 @@
 import React from 'react';
 import Footer from '../components/Footer/Footer';
-
+/**
+ * @NavbarLeft
+ * @classdesc COMPONENT NavbarLeft
+ * DISPLAY NAVBARLEFT
+ */
 class NavbarLeft extends React.Component {
     render(){
         return(

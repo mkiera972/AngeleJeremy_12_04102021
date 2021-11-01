@@ -23,3 +23,21 @@ body{
 .block{
   display: block;
 }
+
+.grey{
+  color : $color_grey;
+}
+
+.red{
+  color : $color_red;
+}
+
+.noData{
+  background-color: $color_white;
+}
+
+.errorChart, .errorData{
+  background-color: $color_white;
+  border: 1px solid black;
+  text-align: center;
+}

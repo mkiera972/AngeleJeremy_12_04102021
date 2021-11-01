@@ -1,5 +1,9 @@
 import React from 'react';
-
+/**
+ * @Footer
+ * @classdesc COMPONENT FOOTER
+ * DISPLAY FOOTER
+ */
 class Footer extends React.Component {
     render(){
         return(

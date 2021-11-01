@@ -1,6 +1,10 @@
 import PropTypes from "prop-types";
 import React from 'react';
-
+/**
+ * @TooltipBarChart
+ * @classdesc COMPONENT TooltipBarChart 
+ * DISPLAY TOOLTIP ON HOVER FROM RECHART CHARTBAR
+ */
 class TooltipBarChart extends React.Component {
     render() {
         const { payload, active } = this.props;

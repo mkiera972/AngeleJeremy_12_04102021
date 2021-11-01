@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 
-
+/**
+ * DISPLAY COMPONENT CARD
+ */
 class CardActivity extends Component {
     render() {
         return (
@@ -20,8 +22,8 @@ class CardActivity extends Component {
 }
 
 CardActivity.propTypes = {
-    icon : PropTypes.string,
-    dataActivity : PropTypes.string,
-    title : PropTypes.string
+    icon : PropTypes.string.isRequired,
+    dataActivity : PropTypes.string.isRequired,
+    title : PropTypes.string.isRequired
 }
 export default CardActivity;

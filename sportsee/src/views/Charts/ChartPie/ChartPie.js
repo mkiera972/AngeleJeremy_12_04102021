@@ -1,27 +1,40 @@
 import ChartPie from '../../../components/Charts/ChartPie/ChartPie';
+import ErrorData from '../../../components/ErrorData/ErrorData';
 import PropTypes from 'prop-types';
-import React, { Component } from "react";
-
-class ChartPieViews extends Component {
+import React from "react";
+/**
+ * @ChartPieViews
+ * @classdesc COMPONENT ChartPieViews
+ * GET DATA GOALSCORE FROM API
+ * DISPLAY DATA FROM COMPONENT CHARTPIE
+ */
+class ChartPieViews extends React.Component {
     render() {
-        return (
+        return this.props.goalScoreData.length > 0 ?
+        (
             <React.Fragment>
                 <h2 className="charts-graph-scores-title">Score</h2>
                 <ChartPie goalScoreData={this.props.goalScoreData} />
                 {this.getPieChartInfos()}
             </React.Fragment>
         )
+        :
+        (
+            <ErrorData msg="API USER GOALSCORE, Erreur lors du chargement des donnees."/>
+        )
     }
 
-    // Build Pie Chart Infos
+    /**
+     * getPieChartInfos
+     * Build Pie Chart Infos
+     * @return HTML PIE INFOS
+     */
     getPieChartInfos = () => {
         return (
             <div className="charts-graph-scores-infos">
-                <span className="harts-graph-scores-value">{this.props.goalScorePercentage} %</span>
-                <span className ="block"/>
-                de votre
-                <span className ="block"/>
-                objectif
+                <span className="charts-graph-scores-value">{this.props.goalScorePercentage}%</span>
+                <span className ="block grey">de votre</span>
+                <span className ="block grey">objectif</span>
             </div>
         )
     }

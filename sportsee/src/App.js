@@ -10,7 +10,13 @@ import Header from './components/Header/Header'
 import Dashboard from './components/Dashboard/Dashboard';
 import {routes} from './routes/routes';
 
-
+/**
+ * @App
+ * @classdesc COMPONENT APP
+ * GEN ROUTE APPLICATION VIA REACT ROUTER
+ * DISPLAY DASHBOARD COMPONENT 
+ * DISPLAY HEADER COMPONENT
+ */
 class App extends React.Component {
   render() {
     return (

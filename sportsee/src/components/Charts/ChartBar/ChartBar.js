@@ -2,6 +2,11 @@ import React from 'react';
 import {BarChart, Bar, CartesianGrid, Tooltip,Legend, ResponsiveContainer, XAxis, YAxis} from 'recharts';
 import TooltipBarChart from '../Tooltips/TooltipBarChart/TooltipBarChart';
 import PropTypes from 'prop-types';
+/**
+ * @ChartBar
+ * @classdesc COMPONENT ChartBar 
+ * DISPLAY DAYLIACTIVITY FROM RECHART CHARTBAR
+ */
 class ChartBar extends React.Component {
     render(){
         return(

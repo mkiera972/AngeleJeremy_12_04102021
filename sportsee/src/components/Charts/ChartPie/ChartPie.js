@@ -1,9 +1,12 @@
 import { Cell, Pie, PieChart, ResponsiveContainer } from "recharts";
 import PropTypes from 'prop-types';
 import React, { Component } from "react";
-
+/**
+ * @ChartPie
+ * @classdesc COMPONENT CHARTPIE
+ * DISPLAY GOALSCORE FROM RECHART CHARTPIE
+ */
 class ChartPie extends Component {
-    // Build Pie Chart
     render() {
         return (
             <ResponsiveContainer width="100%" height="100%">

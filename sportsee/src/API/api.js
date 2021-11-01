@@ -1,13 +1,25 @@
 import axios from 'axios';
 import { getDataFormat, getDailyActivityDataFormat, getPerformanceAverageDataFormat, getUserAverageDataFormat } from './apiFormat';
 
+/**
+ * @ApiProvider
+ * @classdesc CLASS APIPROVIDER
+ * FUNCTION getData
+ * FUNCTION getUserDailyActivityData
+ * FUNCTION getUserAverageSessionData
+ * FUNCTION getUserPerformanceData
+ */
 class ApiProvider {
+    /**
+     * CONSTRUCTOR
+     * @return baseUrl
+     */
     constructor() {
         this.baseUrl = 'http://localhost:4000';
     }
 
     /**
-     * Fetch USER_MAIN_DATA from API
+     * Fetch USER_MAIN_DATA from API 
      * @param {string} id - user id
      * @return {Array.Object}
      */
@@ -23,7 +35,7 @@ class ApiProvider {
     }
 
     /**
-     * Fetch USER_ACTIVITY from API
+     * Fetch USER_ACTIVITY from API 
      * @param {string} id - user id
      * @return {Array.Object}
      */
@@ -32,16 +44,17 @@ class ApiProvider {
         let url = `${this.baseUrl}/user/${id}/activity`;
 
         await axios.get(url)
-        .then(function (response) {
-            
+        .then((response) => {
             data = getDailyActivityDataFormat(response);
+        }).catch((error) => {
+            data = [];
         })
         
         return data;
     }
 
     /**
-     * Fetch USER_AVERAGE_SESSIONS from API
+     * Fetch USER_AVERAGE_SESSIONS from API 
      * @param {string} id - user id
      * @return {Array.Object}
      */
@@ -53,12 +66,14 @@ class ApiProvider {
             .get(url)
             .then(function (response) {
                 data = getUserAverageDataFormat(response);
+            }).catch((error) => {
+                data = [];
             })
         return data;
     }
 
     /**
-     * Fetch USER_PERFORMANCE from API
+     * Fetch USER_PERFORMANCE from API 
      * @param {string} id - user id
      * @return {Array.Object}
      */
@@ -70,6 +85,8 @@ class ApiProvider {
             .get(url)
             .then(function (response) {
                 data = getPerformanceAverageDataFormat(response);
+            }).catch((error) => {
+                data = [];
             })
         return data;
     }

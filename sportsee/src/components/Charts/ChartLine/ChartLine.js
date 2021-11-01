@@ -2,7 +2,11 @@ import {Line, LineChart, Tooltip, XAxis, YAxis, ResponsiveContainer} from "recha
 import React from "react";
 import PropTypes from 'prop-types';
 import TooltipLineChart from "../Tooltips/TooltipLineChart/TooltipLineChart";
-
+/**
+ * @ChartLine
+ * @classdesc COMPONENT CHARTLINE 
+ * DISPLAY USER AVERAGE SESSION FROM RECHART CHARTLINE
+ */
 class ChartLine extends React.Component {
     // Build Line Chart 
     render() {

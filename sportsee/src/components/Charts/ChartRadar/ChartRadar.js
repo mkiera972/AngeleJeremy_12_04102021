@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer} from 'recharts';
 import React, { Component } from "react";
-
+/**
+ * @ChartRadar
+ * @classdesc COMPONENT ChartRadar
+ * DISPLAY PERFORMANCE FROM RECHART CHARTRADAR
+ */
 class ChartRadar extends Component { 
     render() {
         return (
             <ResponsiveContainer width="100%" height="100%">
                 <RadarChart cx="50%" cy="50%" outerRadius="70%" data={this.props.performanceAverageData}>
-                    <PolarGrid radialLines={false} />{/*a revoir*/}
+                    <PolarGrid radialLines={false} />
                     <PolarAngleAxis 
                         dataKey="label" 
                         stroke="white"
