@@ -7,6 +7,11 @@
         padding: 2rem;
         flex-wrap: wrap;
         position: relative;
+        height: 1200px;
+        @media (min-width: 1024px) and (max-width: 1400px) {
+            height: 800px;
+        } 
+        
         &-icons{
             list-style: none;
             color: $color_white;
