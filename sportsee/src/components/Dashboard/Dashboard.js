@@ -1,6 +1,11 @@
 import React from 'react';
 import NavbarLeft from '../../NavbarLeft/NavbarLeft';
 import Charts from '../../views/Charts/Charts';
+/**
+ * @Dashboard
+ * @classdesc COMPONENT Dashboard 
+ * DISPLAY ALL CHARTS AND ACTIVITY TRACKER
+ */
 class Dashboard extends React.Component {
     render(){
         return(

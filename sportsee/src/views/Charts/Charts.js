@@ -106,8 +106,17 @@ class Charts extends React.Component {
         return(
             <React.Fragment>
                 <div className="userInfos">
-                    <h1 className="userInfos-username">Bonjour <span className="red">{this.state.firstName}</span></h1>
-                    <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
+                    {
+                        this.state.firstName 
+                        ?
+                            <React.Fragment>
+                                <h1 className="userInfos-username">Bonjour <span className="red">{this.state.firstName}</span></h1>
+                                <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
+                            </React.Fragment>
+                        :
+                            ""
+                    }
+                    
                 </div>
                 <div className="charts">
                     <div className={this.state.errorChartBar ? "charts-bar errorChart" : "charts-bar"}>
