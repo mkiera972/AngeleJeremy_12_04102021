@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 
 /**
- * DISPLAY COMPONENT CARD
+ * @CardActivity COMPONENT CardActivity 
+ * @param {string} props.classCard  - css classnamee 
+ * @param {string} props.icon - img src 
+ * @return DISPLAY COMPONENT CARD
  */
 class CardActivity extends Component {
     render() {

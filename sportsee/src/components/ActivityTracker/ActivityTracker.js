@@ -9,6 +9,11 @@ import protein from "../../assets/activityTracker/protein.png";
 import carbohydrates from "../../assets/activityTracker/carbohydrates.png";
 import lipids from "../../assets/activityTracker/lipids.png";
 
+/**
+ * @activityTracker COMPONENT activityTracker 
+ * @param {object} props.activityTrackerData  - data activity Tracker
+ * @return DISPLAY COMPONENT CardActivity
+ */
 class activityTracker extends Component {
     render() {
         return typeof this.props.activityTrackerData.calorieCount !== 'undefined' ? 

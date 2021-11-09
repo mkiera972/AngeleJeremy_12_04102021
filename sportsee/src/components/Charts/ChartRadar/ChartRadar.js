@@ -4,7 +4,8 @@ import React, { Component } from "react";
 /**
  * @ChartRadar
  * @classdesc COMPONENT ChartRadar
- * DISPLAY PERFORMANCE FROM RECHART CHARTRADAR
+ * @param {array} props.performanceAverageData  - performance Average Data
+ * @return DISPLAY PERFORMANCE FROM RECHART CHARTRADAR
  */
 class ChartRadar extends Component { 
     render() {

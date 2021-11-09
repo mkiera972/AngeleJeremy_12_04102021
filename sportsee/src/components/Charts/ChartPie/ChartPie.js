@@ -5,6 +5,8 @@ import React, { Component } from "react";
  * @ChartPie
  * @classdesc COMPONENT CHARTPIE
  * DISPLAY GOALSCORE FROM RECHART CHARTPIE
+ * @param {array} props.goalScoreData  - goal Score Data
+ * @return DISPLAY GOALSCORE FROM RECHART CHARTPIE
  */
 class ChartPie extends Component {
     render() {

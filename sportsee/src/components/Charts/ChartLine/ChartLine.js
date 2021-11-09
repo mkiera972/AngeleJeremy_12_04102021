@@ -5,7 +5,8 @@ import TooltipLineChart from "../Tooltips/TooltipLineChart/TooltipLineChart";
 /**
  * @ChartLine
  * @classdesc COMPONENT CHARTLINE 
- * DISPLAY USER AVERAGE SESSION FROM RECHART CHARTLINE
+ * @param {array} props.userAverageData  - user Average Data
+ * @return DISPLAY USER AVERAGE SESSION FROM RECHART CHARTLINE
  */
 class ChartLine extends React.Component {
     // Build Line Chart 

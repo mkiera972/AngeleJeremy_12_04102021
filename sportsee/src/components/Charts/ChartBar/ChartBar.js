@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 /**
  * @ChartBar
  * @classdesc COMPONENT ChartBar 
- * DISPLAY DAYLIACTIVITY FROM RECHART CHARTBAR
+ * @param {array} props.dailyActivityData  - data daily activity 
+ * @return DISPLAY DAYLIACTIVITY FROM RECHART CHARTBAR
+ * 
  */
 class ChartBar extends React.Component {
     render(){
