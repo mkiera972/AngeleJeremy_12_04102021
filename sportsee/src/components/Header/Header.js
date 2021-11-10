@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 /**
  * @Header
  * @classdesc COMPONENT Header
- * DISPLAY HEADER
+ * @return DISPLAY HEADER
  */
 class Header extends React.Component {
     render(){

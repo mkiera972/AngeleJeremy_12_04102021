@@ -8,12 +8,14 @@ import ChartPieViews from './ChartPie/ChartPie';
 import ActivityTracker from '../../components/ActivityTracker/ActivityTracker';
 /**
  * @Charts
- * @classdesc DISPLAY ALL DATA FROM COMPONENTS
+ * @classdesc GET ALL DATA FROM COMPONENTS
  * ChartBarViews
  * ChartRadarViews
  * ChartLineViews
  * ChartPieViews
  * ActivityTracker
+ * @param {string} props.id  - id user
+ * @return DISPLAY ALL CHARTS
  */
 class Charts extends React.Component {
     /**

@@ -8,7 +8,8 @@ import ErrorData from '../../../components/ErrorData/ErrorData';
  * @ChartRadarViews
  * @classdesc COMPONENT ChartRadarViews
  * GET DATA PERFORMANCE FROM API
- * DISPLAY DATA FROM COMPONENT CHARTRADAR
+ * @param {string} props.id  - id user
+ * @return DISPLAY DATA FROM COMPONENT CHARTRADAR
  */
 class ChartRadarViews extends React.Component {
     /**

@@ -6,7 +6,8 @@ import ErrorData from '../../../components/ErrorData/ErrorData';
 /**
  * @ChartLineViews
  * @classdesc GET DATA USER AVERAGE SESSION FROM API 
- * DISPLAY DATA FROM COMPONENT CHARTLINE
+ * @param {string} props.id  - id user
+ * @return DISPLAY DATA FROM COMPONENT CHARTLINE
  */
 class ChartLineViews extends React.Component {
     /**

@@ -3,7 +3,9 @@ import React from 'react';
 /**
  * @TooltipBarChart
  * @classdesc COMPONENT TooltipBarChart 
- * DISPLAY TOOLTIP ON HOVER FROM RECHART CHARTBAR
+ * @param {array} props.payload  - payload data
+ * @param {boolean} props.active  - booleen
+ * @return DISPLAY TOOLTIP ON HOVER FROM RECHART CHARTBAR
  */
 class TooltipBarChart extends React.Component {
     render() {

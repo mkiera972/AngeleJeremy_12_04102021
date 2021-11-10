@@ -3,7 +3,9 @@ import React, { Component } from "react";
 /**
  * @TooltipLineChart
  * @classdesc COMPONENT TooltipLineChart 
- * DISPLAY INFOS TOPLINE CHARTLINE
+ * @param {array} props.payload  - payload data
+ * @param {boolean} props.active  - booleen
+ * @return DISPLAY INFOS TOPLINE CHARTLINE
  */
 class TooltipLineChart extends Component {
     render() {

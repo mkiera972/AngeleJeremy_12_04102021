@@ -6,7 +6,8 @@ import React from "react";
  * @ChartPieViews
  * @classdesc COMPONENT ChartPieViews
  * GET DATA GOALSCORE FROM API
- * DISPLAY DATA FROM COMPONENT CHARTPIE
+ * @param {string} props.id  - id user
+ * @return DISPLAY DATA FROM COMPONENT CHARTPIE
  */
 class ChartPieViews extends React.Component {
     render() {

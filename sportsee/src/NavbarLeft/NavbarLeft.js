@@ -3,7 +3,7 @@ import Footer from '../components/Footer/Footer';
 /**
  * @NavbarLeft
  * @classdesc COMPONENT NavbarLeft
- * DISPLAY NAVBARLEFT
+ * @return DISPLAY NAVBARLEFT
  */
 class NavbarLeft extends React.Component {
     render(){

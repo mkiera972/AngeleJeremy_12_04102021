@@ -8,7 +8,8 @@ import PropTypes from 'prop-types';
  * @ChartBarViews
  * @classdesc COMPONENT ChartBarViews
  * GET DATA DAYLYACTIVITY FROM API
- * DISPLAY DATA FROM COMPONENT CHARTBAR
+ * @param {string} props.id  - id user
+ * @return DISPLAY DATA FROM COMPONENT CHARTBAR
  */
 class ChartBarViews extends React.Component {
     /**
